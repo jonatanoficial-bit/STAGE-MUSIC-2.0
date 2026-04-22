@@ -5,5 +5,12 @@
     "generatedAt": "2026-04-22T12:23:00-03:00",
     "zipName": "stage_music_build_v0.1.0_2026-04-22_12-23.zip",
     "notes": "Fundação estrutural do app com páginas base e deploy GitHub/Vercel"
+  },
+  {
+    "version": "v0.2.0",
+    "phase": "Fase 2",
+    "generatedAt": "2026-04-22T12:43:00-03:00",
+    "zipName": "stage_music_build_v0.2.0_2026-04-22_12-43.zip",
+    "notes": "Identidade visual oficial, assets iniciais e refinamento premium das telas base"
   }
 ]

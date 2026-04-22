@@ -1,3 +1,26 @@
-.auth-brand { background: linear-gradient(180deg, rgba(109,74,255,.10), rgba(255,255,255,.85)); }
-.auth-panel { background: rgba(255,255,255,.9); }
+.auth-brand {
+  background:
+    linear-gradient(180deg, rgba(109,74,255,.12), rgba(255,255,255,.84)),
+    url('../assets/backgrounds/hero-stage.svg') center/cover no-repeat;
+}
+.auth-panel { background: rgba(255,255,255,.93); }
 .compact h2 { margin: 6px 0 8px; font-size: 2rem; }
+.auth-spotlight {
+  margin-top: 24px;
+  display: grid;
+  gap: 16px;
+}
+.auth-quote {
+  padding: 18px;
+  border-radius: 20px;
+  background: rgba(255,255,255,.88);
+  border: 1px solid var(--line);
+}
+.auth-quote p { margin: 0; }
+.local-mode-box {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 22px;
+  border: 1px solid #cfeedd;
+  background: #f3fff8;
+}

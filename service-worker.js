@@ -1,4 +1,4 @@
-const CACHE_NAME = 'stage-music-v0-1-0';
+const CACHE_NAME = 'stage-music-v0-2-0';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -12,7 +12,11 @@ const urlsToCache = [
   '/css/auth.css',
   '/css/live.css',
   '/js/build-info.js',
-  '/js/app.js'
+  '/js/app.js',
+  '/assets/logo/stage-music-logo.svg',
+  '/assets/icons/favicon.svg',
+  '/assets/backgrounds/hero-stage.svg',
+  '/assets/illustrations/splash-card.svg'
 ];
 
 self.addEventListener('install', (event) => {

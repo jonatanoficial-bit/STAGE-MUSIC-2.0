@@ -1,8 +1,8 @@
 window.StageMusicBuild = {
-  version: 'v0.1.0',
+  version: 'v0.2.0',
   date: '22/04/2026',
-  time: '12:23',
-  phase: 'Fase 1'
+  time: '12:43',
+  phase: 'Fase 2'
 };
 
 document.querySelectorAll('#build-info').forEach((el) => {

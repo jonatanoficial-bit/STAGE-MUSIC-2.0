@@ -4,34 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stage Music • Inserir cifra</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/auth.css" />
 </head>
 <body data-page="login-cifra">
   <main class="auth-layout">
     <section class="auth-brand">
-      <div class="logo-mark xl">SM</div>
-      <h1>Entre para continuar fazendo música</h1>
-      <p>Escolha entre usar localmente no dispositivo ou conectar sua conta para sincronizar cifras e listas.</p>
+      <img class="auth-hero-mark" src="assets/logo/stage-music-logo.svg" alt="Logo Stage Music" />
+      <h1>Entre e continue fazendo música</h1>
+      <p>Escolha entre usar localmente no dispositivo ou conectar sua conta para sincronizar cifras, listas e futuras atualizações oficiais.</p>
       <div class="benefits-grid">
         <div class="pill-card">Modo local offline</div>
         <div class="pill-card">Sincronização futura</div>
         <div class="pill-card">Editor de cifra</div>
         <div class="pill-card">Setlists e palco</div>
       </div>
+
+      <div class="auth-spotlight">
+        <div class="mockup-card">
+          <img src="assets/illustrations/login-reference.png" alt="Referência visual da tela de login" />
+        </div>
+        <div class="auth-quote">
+          <p>“O Stage Music me acompanha em todos os momentos, do ensaio ao palco.”</p>
+        </div>
+      </div>
     </section>
 
     <section class="auth-panel">
       <div class="page-header compact">
         <a href="index.html" class="back-link">← Voltar</a>
-        <h2>Inserir cifra</h2>
-        <p>Pré-página da Fase 1 pronta para integração com Firebase na próxima evolução.</p>
+        <span class="visual-badge">Pré-página da Inserir Cifra</span>
+        <h2>Escolha como deseja entrar</h2>
+        <p>Esta fase já deixa o fluxo pronto visualmente para o Firebase Auth da próxima evolução.</p>
       </div>
 
       <div class="login-options">
         <button class="option-card active" type="button">
           <strong>Online</strong>
-          <span>Acesse sua conta e sincronize depois</span>
+          <span>Acesse sua conta e sincronize cifras e listas</span>
         </button>
         <button class="option-card" type="button">
           <strong>Local</strong>
@@ -39,27 +50,40 @@
         </button>
       </div>
 
+      <div class="social-stack">
+        <button class="btn btn-outline wide" type="button">Entrar com Google</button>
+        <button class="btn btn-outline wide" type="button">Entrar com Apple</button>
+      </div>
+
       <form class="form-stack" onsubmit="event.preventDefault()">
         <label>
-          <span>E-mail ou telefone</span>
-          <input type="text" placeholder="seuemail@exemplo.com" />
+          <span>E-mail</span>
+          <input type="email" placeholder="seuemail@exemplo.com" />
         </label>
         <label>
           <span>Senha</span>
           <input type="password" placeholder="Digite sua senha" />
         </label>
         <button class="btn btn-primary wide" type="submit">Entrar</button>
-        <button class="btn btn-secondary wide" type="button">Continuar offline</button>
       </form>
 
+      <div class="local-mode-box">
+        <strong>Usar localmente</strong>
+        <p class="section-subtitle">Ideal para ensaios rápidos, edição offline e salvamento apenas no dispositivo.</p>
+        <div class="dual-actions">
+          <button class="btn btn-secondary" type="button">Continuar offline</button>
+          <button class="btn btn-outline" type="button">Criar conta</button>
+        </div>
+      </div>
+
       <div class="auth-note">
-        <strong>Planejado para a próxima fase</strong>
-        <p>Firebase Authentication, login Google, criação de conta e persistência online/local.</p>
+        <strong>Preparado para a Fase 3</strong>
+        <p>O próximo upgrade entra com Firebase Authentication, persistência de sessão e primeira lógica real de acesso.</p>
       </div>
     </section>
   </main>
 
-  <footer class="app-footer"><span id="build-info">Build v0.1.0 | 22/04/2026 12:23</span></footer>
+  <footer class="app-footer"><span id="build-info">Build v0.2.0 | 22/04/2026 12:43</span></footer>
   <script src="js/build-info.js"></script>
 </body>
 </html>
