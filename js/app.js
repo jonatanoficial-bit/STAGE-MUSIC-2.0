@@ -8,12 +8,21 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const optionCards = document.querySelectorAll('.option-card');
-  optionCards.forEach((card) => {
-    card.addEventListener('click', () => {
-      optionCards.forEach((item) => item.classList.remove('active'));
-      card.classList.add('active');
+  const modePanels = document.querySelectorAll('[data-auth-mode-panel]');
+  const setActiveMode = (mode) => {
+    optionCards.forEach((item) => item.classList.toggle('active', item.dataset.mode === mode));
+    modePanels.forEach((panel) => {
+      panel.hidden = panel.dataset.authModePanel !== mode;
     });
+  };
+
+  optionCards.forEach((card) => {
+    card.addEventListener('click', () => setActiveMode(card.dataset.mode || 'online'));
   });
+
+  if (optionCards.length) {
+    setActiveMode(document.querySelector('.option-card.active')?.dataset.mode || 'online');
+  }
 
   document.querySelectorAll('[data-fill-search]').forEach((button) => {
     button.addEventListener('click', () => {
@@ -31,6 +40,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const id = button.getAttribute('data-scroll-target');
       const target = id ? document.getElementById(id) : null;
       if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  document.querySelectorAll('[data-auth-launch]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const authState = window.StageMusicAuth?.getState?.() || { isAuthenticated: false };
+      window.location.href = authState.isAuthenticated ? 'inserir-cifra.html' : 'login-cifra.html';
     });
   });
 });

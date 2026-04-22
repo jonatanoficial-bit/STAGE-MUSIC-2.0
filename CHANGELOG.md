@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.4.0 — 22/04/2026 12:17
+- Fase 4 concluída com pré-login funcional para Inserir Cifra.
+- Inclusão de escolha real entre modo online e modo local.
+- Inclusão de `auth.js` com sessão persistente e proteção da rota do editor.
+- Inclusão de `inserir-cifra.html` como primeira área real liberada após autenticação.
+- Inclusão de configuração base para Firebase Auth em `js/firebase-config.js`.
+- Atualização global do build-info para a nova versão.
+
+# Changelog
+
 ## v0.3.0 — 22/04/2026 13:15
 - Fase 3 concluída com home mais completa e funcional.
 - Inclusão de acessos rápidos para palco, criação, listas e ajustes.

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stage Music • Editor de cifra</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/editor.css" />
+</head>
+<body data-page="inserir-cifra">
+  <main class="page-shell">
+    <div class="page-header compact">
+      <a href="index.html" class="back-link">← Início</a>
+      <span class="visual-badge">Editor liberado</span>
+      <h1>Inserir cifra</h1>
+      <p>Primeira área real liberada pela sessão online ou local. Nesta fase ela já valida acesso, mantém a sessão e prepara a evolução do salvamento.</p>
+    </div>
+    <div class="editor-shell">
+      <section class="editor-card">
+        <div class="editor-topbar">
+          <div class="editor-status" data-session-badge>Sem sessão ativa</div>
+          <div class="dual-actions">
+            <button class="btn btn-outline" type="button" data-auth-logout>Sair</button>
+          </div>
+        </div>
+        <div class="session-card">
+          <strong>Entrada liberada</strong>
+          <small>Se você chegou aqui, o fluxo online/local da Fase 4 está funcionando. Na próxima fase entra o salvamento real do editor.</small>
+        </div>
+        <form id="song-form">
+          <div class="editor-grid">
+            <label>
+              <span>Título</span>
+              <input id="song-title" type="text" placeholder="Ex.: Nunca Vi Amor Assim" />
+            </label>
+            <label>
+              <span>Artista</span>
+              <input id="song-artist" type="text" placeholder="Ex.: Ariane Mazur" />
+            </label>
+            <label>
+              <span>Tom</span>
+              <select id="song-key">
+                <option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>A</option><option>B</option>
+              </select>
+            </label>
+            <label>
+              <span>BPM</span>
+              <input id="song-bpm" type="number" min="40" max="240" value="72" />
+            </label>
+          </div>
+          <label style="margin-top:14px; display:grid; gap:8px;">
+            <span>Conteúdo da cifra</span>
+            <textarea id="song-content" placeholder="[Intro]
+G  D  Em  C
+
+[Verso]
+G            D
+Tua presença me sustenta..."></textarea>
+          </label>
+          <div class="editor-actions">
+            <button class="btn btn-primary" type="submit">Atualizar prévia</button>
+            <button class="btn btn-secondary" type="button" id="load-demo">Carregar demo</button>
+          </div>
+        </form>
+      </section>
+      <aside class="editor-side-card">
+        <div class="page-header compact" style="margin-bottom:16px;">
+          <span class="visual-badge">Prévia</span>
+          <h2 style="margin:10px 0 0; font-size:1.5rem;">Leitura rápida</h2>
+        </div>
+        <div class="preview-block">
+          <pre id="song-preview">Preencha a cifra para visualizar aqui.</pre>
+        </div>
+        <div class="page-header compact" style="margin:18px 0 12px;">
+          <span class="visual-badge">Próximas entregas</span>
+        </div>
+        <div class="side-list">
+          <article>
+            <strong>Fase 5</strong>
+            <small>Salvamento local de rascunho e catálogo do usuário.</small>
+          </article>
+          <article>
+            <strong>Fase 6</strong>
+            <small>Firebase Auth real, Firestore e sincronização online.</small>
+          </article>
+          <article>
+            <strong>Fase 7</strong>
+            <small>Papel admin e catálogo oficial de cifras.</small>
+          </article>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <footer class="app-footer"><span id="build-info">Build v0.4.0 | 22/04/2026 12:17</span></footer>
+  <script src="js/build-info.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/auth.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (!window.StageMusicAuth.requireAuth('inserir-cifra.html')) return;
+      const titleInput = document.getElementById('song-title');
+      const artistInput = document.getElementById('song-artist');
+      const keyInput = document.getElementById('song-key');
+      const bpmInput = document.getElementById('song-bpm');
+      const contentInput = document.getElementById('song-content');
+      const preview = document.getElementById('song-preview');
+      const form = document.getElementById('song-form');
+      const renderPreview = () => {
+        preview.textContent = `${titleInput.value || 'Sem título'}
+${artistInput.value || 'Sem artista'} • Tom ${keyInput.value} • ${bpmInput.value || '--'} BPM
+
+${contentInput.value || 'Preencha a cifra para visualizar aqui.'}`;
+      };
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        renderPreview();
+      });
+      document.getElementById('load-demo').addEventListener('click', () => {
+        titleInput.value = 'Santo';
+        artistInput.value = 'Ariane Mazur';
+        keyInput.value = 'D';
+        bpmInput.value = '74';
+        contentInput.value = `[Intro]
+D  A  Bm  G
+
+[Verso]
+D                A
+Teu nome é santo sobre mim
+Bm               G
+Tua presença enche este lugar
+
+[Refrão]
+D        A
+Santo, santo
+Bm          G
+És digno de louvor`;
+        renderPreview();
+      });
+      renderPreview();
+    });
+  </script>
+</body>
+</html>

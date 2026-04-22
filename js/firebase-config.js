@@ -1,8 +1,14 @@
-window.firebaseConfig = {
-  apiKey: 'SUBSTITUIR_NA_FASE_2',
-  authDomain: 'SUBSTITUIR_NA_FASE_2',
-  projectId: 'SUBSTITUIR_NA_FASE_2',
-  storageBucket: 'NAO_USAR_NO_MVP_GRATUITO',
-  messagingSenderId: 'SUBSTITUIR_NA_FASE_2',
-  appId: 'SUBSTITUIR_NA_FASE_2'
+window.STAGE_MUSIC_FIREBASE = {
+  apiKey: '',
+  authDomain: '',
+  projectId: '',
+  appId: '',
+  storageBucket: '',
+  messagingSenderId: ''
+};
+
+window.STAGE_MUSIC_AUTH_SETTINGS = {
+  googleEnabled: true,
+  allowLocalMode: true,
+  persistLogin: true
 };
