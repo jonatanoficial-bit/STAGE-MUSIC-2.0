@@ -14,4 +14,23 @@ document.addEventListener('DOMContentLoaded', () => {
       card.classList.add('active');
     });
   });
+
+  document.querySelectorAll('[data-fill-search]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const value = button.getAttribute('data-fill-search') || '';
+      const target = document.querySelector('[data-home-search]');
+      if (target) {
+        target.value = value;
+        target.focus();
+      }
+    });
+  });
+
+  document.querySelectorAll('[data-scroll-target]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const id = button.getAttribute('data-scroll-target');
+      const target = id ? document.getElementById(id) : null;
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
 });

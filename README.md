@@ -1,38 +1,27 @@
-# Stage Music — Fase 2
+# Stage Music
 
-Build atual: **v0.2.0**  
-Data/hora da build: **22/04/2026 12:43**
+Build atual: **v0.3.0**  
+Data: **22/04/2026 13:15**
 
-## Escopo desta fase
-- identidade visual base do produto
-- logo vetorial oficial
-- favicon vetorial
-- background hero inicial
-- splash inicial
-- refinamento visual da home
-- refinamento visual da pré-página de Inserir Cifra
-- organização de assets para próximas fases
+## Fase atual
+**Fase 3 — Home completa**
 
-## Páginas incluídas
-- Home refinada
-- Inserir cifra (pré-página refinada)
-- Modo Live com referência visual
-- Buscar cifra
-- Minhas listas
-- Configurações
-- 404
+## O que esta build entrega
+- home mais funcional e mais próxima de um produto real
+- navegação rápida entre palco, busca, criação e listas
+- área de repertórios recentes simulada
+- área de listas-modelo simulada
+- visão do fluxo principal do app
+- projeto pronto para GitHub + Vercel
 
-## Assets desta fase
-- `assets/logo/stage-music-logo.svg`
-- `assets/icons/favicon.svg`
-- `assets/backgrounds/hero-stage.svg`
-- `assets/illustrations/splash-card.svg`
-- imagens de referência geradas no projeto em `assets/illustrations/`
+## Estrutura
+Projeto estático em HTML, CSS e JavaScript vanilla.
 
 ## Publicação
-1. Suba todo o conteúdo desta pasta para um repositório GitHub.
-2. Conecte o repositório na Vercel.
-3. A Vercel fará o deploy automático.
+1. Extraia o ZIP.
+2. Suba a pasta no GitHub.
+3. Conecte o repositório à Vercel.
+4. Faça deploy.
 
-## Próxima fase sugerida
-Fase 3: login funcional com Firebase Auth e primeira sessão real do usuário.
+## Próxima fase
+**Fase 4 — Pré-login funcional com Firebase Auth**
