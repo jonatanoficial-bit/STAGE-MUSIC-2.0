@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stage Music • Inserir cifra</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/auth.css" />
+</head>
+<body data-page="login-cifra">
+  <main class="auth-layout">
+    <section class="auth-brand">
+      <div class="logo-mark xl">SM</div>
+      <h1>Entre para continuar fazendo música</h1>
+      <p>Escolha entre usar localmente no dispositivo ou conectar sua conta para sincronizar cifras e listas.</p>
+      <div class="benefits-grid">
+        <div class="pill-card">Modo local offline</div>
+        <div class="pill-card">Sincronização futura</div>
+        <div class="pill-card">Editor de cifra</div>
+        <div class="pill-card">Setlists e palco</div>
+      </div>
+    </section>
+
+    <section class="auth-panel">
+      <div class="page-header compact">
+        <a href="index.html" class="back-link">← Voltar</a>
+        <h2>Inserir cifra</h2>
+        <p>Pré-página da Fase 1 pronta para integração com Firebase na próxima evolução.</p>
+      </div>
+
+      <div class="login-options">
+        <button class="option-card active" type="button">
+          <strong>Online</strong>
+          <span>Acesse sua conta e sincronize depois</span>
+        </button>
+        <button class="option-card" type="button">
+          <strong>Local</strong>
+          <span>Use no dispositivo sem login</span>
+        </button>
+      </div>
+
+      <form class="form-stack" onsubmit="event.preventDefault()">
+        <label>
+          <span>E-mail ou telefone</span>
+          <input type="text" placeholder="seuemail@exemplo.com" />
+        </label>
+        <label>
+          <span>Senha</span>
+          <input type="password" placeholder="Digite sua senha" />
+        </label>
+        <button class="btn btn-primary wide" type="submit">Entrar</button>
+        <button class="btn btn-secondary wide" type="button">Continuar offline</button>
+      </form>
+
+      <div class="auth-note">
+        <strong>Planejado para a próxima fase</strong>
+        <p>Firebase Authentication, login Google, criação de conta e persistência online/local.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer"><span id="build-info">Build v0.1.0 | 22/04/2026 12:23</span></footer>
+  <script src="js/build-info.js"></script>
+</body>
+</html>

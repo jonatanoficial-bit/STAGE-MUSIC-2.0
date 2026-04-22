@@ -1,0 +1,9 @@
+{
+  "name": "stage-music",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static build ready'"
+  }
+}

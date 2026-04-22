@@ -1,0 +1,4 @@
+.feature-card.live { background: linear-gradient(135deg, rgba(109,74,255,.14), rgba(109,74,255,.06)), var(--surface); }
+.feature-card.search { background: linear-gradient(135deg, rgba(39,116,217,.12), rgba(39,116,217,.05)), var(--surface); }
+.feature-card.insert { background: linear-gradient(135deg, rgba(11,157,99,.12), rgba(11,157,99,.05)), var(--surface); }
+.feature-card.lists { background: linear-gradient(135deg, rgba(204,107,19,.10), rgba(204,107,19,.04)), var(--surface); }

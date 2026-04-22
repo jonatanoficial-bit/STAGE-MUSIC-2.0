@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stage Music</title>
+  <meta name="theme-color" content="#6d4aff" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body data-page="home">
+  <div class="app-shell">
+    <aside class="sidebar desktop-only">
+      <div class="brand-block">
+        <div class="logo-mark">SM</div>
+        <div>
+          <h1>Stage Music</h1>
+          <p>Sua música em qualquer palco.</p>
+        </div>
+      </div>
+      <nav class="side-nav">
+        <a class="active" href="index.html">Início</a>
+        <a href="modo-live.html">Modo Live</a>
+        <a href="buscar-cifra.html">Buscar cifra</a>
+        <a href="login-cifra.html">Inserir cifra</a>
+        <a href="minhas-listas.html">Minhas listas</a>
+        <a href="configuracoes.html">Configurações</a>
+      </nav>
+      <div class="promo-card">
+        <strong>Fase 1 iniciada</strong>
+        <p>Base estrutural pronta para próximas evoluções.</p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="brand-inline mobile-only">
+          <div class="logo-mark">SM</div>
+          <strong>Stage Music</strong>
+        </div>
+        <div class="search-shell">
+          <input type="search" placeholder="Buscar músicas, artistas ou cifras..." aria-label="Buscar" />
+        </div>
+        <button class="icon-btn" aria-label="Conta">☻</button>
+      </header>
+
+      <section class="hero-card">
+        <div>
+          <span class="eyebrow">Mobile-first • GitHub • Vercel</span>
+          <h2>Base oficial do app iniciada</h2>
+          <p>Estrutura pronta para evoluir o Stage Music com login, editor de cifra, listas e modo live.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="login-cifra.html">Inserir cifra</a>
+            <a class="btn btn-secondary" href="modo-live.html">Ver Modo Live</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="mini-stat"><span>Build</span><strong>v0.1.0</strong></div>
+          <div class="mini-stat"><span>Status</span><strong>Fase 1</strong></div>
+          <div class="mini-stat"><span>Deploy</span><strong>GitHub + Vercel</strong></div>
+        </div>
+      </section>
+
+      <section class="grid-cards">
+        <a class="feature-card live" href="modo-live.html">
+          <span class="card-tag">Ao vivo</span>
+          <h3>Modo Live</h3>
+          <p>Leitura limpa para palco, culto, ensaio e show.</p>
+        </a>
+        <a class="feature-card search" href="buscar-cifra.html">
+          <span class="card-tag">Catálogo</span>
+          <h3>Buscar cifra</h3>
+          <p>Base preparada para busca local e online.</p>
+        </a>
+        <a class="feature-card insert" href="login-cifra.html">
+          <span class="card-tag">Criação</span>
+          <h3>Inserir cifra</h3>
+          <p>Pré-login pronto para fluxo online ou local.</p>
+        </a>
+        <a class="feature-card lists" href="minhas-listas.html">
+          <span class="card-tag">Organização</span>
+          <h3>Minhas listas</h3>
+          <p>Estrutura base para setlists e repertórios.</p>
+        </a>
+      </section>
+
+      <section class="roadmap-strip">
+        <article>
+          <strong>Agora</strong>
+          <p>Fundação do app, design system, páginas base e build.</p>
+        </article>
+        <article>
+          <strong>Próximo</strong>
+          <p>Tela de pré-login da Inserir Cifra mais refinada e Firebase Auth.</p>
+        </article>
+        <article>
+          <strong>Depois</strong>
+          <p>Editor de cifra com salvamento local e sincronização online.</p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <nav class="bottom-nav mobile-only">
+    <a class="active" href="index.html">Início</a>
+    <a href="modo-live.html">Live</a>
+    <a href="buscar-cifra.html">Buscar</a>
+    <a href="minhas-listas.html">Listas</a>
+    <a href="configuracoes.html">Ajustes</a>
+  </nav>
+
+  <footer class="app-footer">
+    <span id="build-info">Build v0.1.0 | 22/04/2026 12:23</span>
+  </footer>
+
+  <script src="js/build-info.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
