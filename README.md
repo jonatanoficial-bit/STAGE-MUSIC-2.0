@@ -29,3 +29,17 @@ Data: **22/04/2026 12:17**
 
 ## Próxima fase
 **Fase 5 — Salvamento local de cifras e rascunhos**
+
+
+## Estado atual
+- Fase atual: **Fase 5**
+- Build: **v0.5.0 | 22/04/2026 19:36**
+- O editor já salva cifras localmente e mantém rascunhos automáticos no navegador.
+- A página Buscar Cifra já pesquisa a biblioteca offline do dispositivo.
+
+## Fluxo local disponível
+1. Entre em **Inserir Cifra** pelo modo local ou online.
+2. Digite título, artista, tom, BPM, tags, notas e conteúdo.
+3. O rascunho será salvo automaticamente no navegador.
+4. Clique em **Salvar cifra local** para mandar a música para a biblioteca offline.
+5. Use **Buscar Cifra** para localizar as cifras salvas localmente.

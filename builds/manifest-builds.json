@@ -1,35 +1,15 @@
 {
-  "latest": {
-    "version": "v0.4.0",
-    "date": "22/04/2026",
-    "time": "12:17",
-    "phase": "Fase 4",
-    "zip": "stage_music_build_v0.4.0_2026-04-22_12-17.zip"
-  },
-  "history": [
+  "builds": [
     {
-      "version": "v0.4.0",
-      "date": "22/04/2026",
-      "time": "12:17",
-      "phase": "Fase 4"
-    },
-    {
-      "version": "v0.3.0",
-      "date": "22/04/2026",
-      "time": "13:15",
-      "phase": "Fase 3"
-    },
-    {
-      "version": "v0.2.0",
-      "date": "22/04/2026",
-      "time": "12:43",
-      "phase": "Fase 2"
-    },
-    {
-      "version": "v0.1.0",
-      "date": "22/04/2026",
-      "time": "12:23",
-      "phase": "Fase 1"
+      "version": "v0.5.0",
+      "date": "2026-04-22",
+      "time": "19:36",
+      "phase": "Fase 5",
+      "notes": [
+        "salvamento local de cifras",
+        "rascunho automático",
+        "busca local"
+      ]
     }
   ]
 }

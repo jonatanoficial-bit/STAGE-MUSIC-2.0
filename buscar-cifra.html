@@ -11,18 +11,27 @@
   <main class="page-shell">
     <header class="page-header">
       <a href="index.html" class="back-link">← Início</a>
-      <span class="visual-badge">Busca visual refinada</span>
+      <span class="visual-badge">Busca local ativa</span>
       <h1>Buscar cifra</h1>
-      <p>Estrutura base visual para catálogo local, oficial e online.</p>
+      <p>Estrutura pronta para catálogo local, oficial e online. Nesta fase, a busca já lê as cifras salvas no próprio dispositivo.</p>
     </header>
     <section class="placeholder-card">
-      <input class="plain-input" type="search" placeholder="Buscar por música, artista ou palavra-chave" />
-      <div class="result-row"><div><strong>Grande é o Senhor</strong><small>Worship • Oficial</small></div><span class="soft-pill">Destaque</span></div>
-      <div class="result-row"><div><strong>Santo para Sempre</strong><small>Comunidade • Ao vivo</small></div><span class="soft-pill">Live</span></div>
-      <div class="result-row"><div><strong>Te Louvarei</strong><small>Favorita • Salva</small></div><span class="soft-pill">Local</span></div>
+      <input id="search-local-input" class="plain-input" type="search" placeholder="Buscar por música, artista, tom ou trecho da cifra" />
+      <div class="result-row">
+        <div>
+          <strong>Biblioteca local</strong>
+          <small id="search-local-counter">Nenhuma cifra local encontrada</small>
+        </div>
+        <span class="soft-pill">Offline</span>
+      </div>
+      <div id="search-local-results">
+        <div class="result-row empty"><div><strong>Sem resultados</strong><small>Salve cifras na Fase 5 e elas aparecerão aqui.</small></div><span class="soft-pill">Local</span></div>
+      </div>
     </section>
   </main>
-  <footer class="app-footer"><span id="build-info">Build v0.4.0 | 22/04/2026 12:17</span></footer>
+  <footer class="app-footer"><span id="build-info">Build v0.5.0 | 22/04/2026 19:36</span></footer>
   <script src="js/build-info.js"></script>
+  <script src="js/local-db.js"></script>
+  <script src="js/search-local.js"></script>
 </body>
 </html>
